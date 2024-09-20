@@ -72,6 +72,7 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 
 ```sh
 git clone https://github.com/torno2/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
 ```
 
 </details>
@@ -111,6 +112,40 @@ examples of adding popularly requested plugins.
 ### Getting Started
 
 [The Only Video You Need to Get Started with Neovim](https://youtu.be/m8C0Cq9Uv9o)
+
+
+### Uninstall
+
+<details><summary> Linux and Mac </summary>
+
+```
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+
+```
+
+</details>
+
+<details><summary> Windows </summary>
+
+If you're using `cmd.exe`:
+
+```
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+```
+
+If you're using `powershell.exe`
+
+```
+rm -Force ~\AppData\Local\nvim
+rm -Force ~\AppData\Local\nvim-data
+```
+
+</details>
+
+
 
 ### FAQ
 
